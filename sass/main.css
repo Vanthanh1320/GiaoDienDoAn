@@ -834,6 +834,35 @@ select:focus, input:focus {
   }
 }
 
+.cv-experience-list li {
+  position: relative;
+}
+
+.cv-experience-list li .cv-experience-remove {
+  position: absolute;
+  content: "";
+  top: 48px;
+  right: 0;
+}
+
+.cv-experience-list li hr {
+  position: absolute;
+  content: "";
+  top: -40px;
+  width: 100%;
+}
+
+.cv-education-list li {
+  position: relative;
+}
+
+.cv-education-list li .cv-education-remove {
+  position: absolute;
+  content: "";
+  top: 48px;
+  right: 0;
+}
+
 .upload-img {
   background: #fafafa;
   border: 1px solid #D2D2D2;

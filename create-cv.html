@@ -290,64 +290,91 @@
     
                             <div class="col-12 pt-4 mt-0" id="list-item-3">
     
-                                <div class="cv-experience content px-3 px-sm-4 px-md-5 py-4" >
-                                    <h2>Kinh nghiệm làm việc</h2>
-            
+                              <div class="cv-experience-box content px-3 px-sm-4 px-md-5 py-4">
+                                <ul class="cv-experience-list " >
+                                  <h2>Kinh nghiệm làm việc</h2>
+
+                                  <li>                      
                                     <div class="mb-5 row">
-                                        <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Tên công ty <span class=" red-cl">(*)</span></label>
-                                        <div class="col-sm-7 col-md-7 col-xl-5">
-                                            <input type="text" class="form-control" id="" required>
-                                        </div>
+                                      <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Tên công ty <span class=" red-cl">(*)</span></label>
+                                      <div class="col-sm-7 col-md-7 col-xl-5">
+                                          <input type="text" class="form-control" name="company-0" id="" required>
+                                      </div>
+
                                     </div>
                                     <div class="mb-5 row">
                                         <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Thời gian làm việc <span class=" red-cl">(*)</span></label>
                                         <div class="col-sm-7 col-md-7 col-xl-5">
-                                            <input type="text" class="form-control" id="" required>
+                                            <input type="text" class="form-control" name="time-0" id="" required>
                                         </div>
                                     </div>
                                     <div class="mb-5 row">
                                         <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Vị trí công việc <span class=" red-cl">(*)</span></label>
                                         <div class="col-sm-7 col-md-7 col-xl-5">
-                                            <input type="text" class="form-control" id="" required>
+                                            <input type="text" class="form-control" name="posistion-0" id="" required>
                                         </div>
                                     </div>
-                                    <div class="mb-2 row">
+                                    <div class="mb-5 row">
                                         <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Chi tiết công việc </label>
                                         <div class="col-sm-7 col-md-7 col-xl-8">
-                                            <textarea name="mota" class="form-control" id="" cols="50" rows="5"></textarea>
+                                            <textarea class="form-control" name="description-0" id="" cols="50" rows="5"></textarea>
                                         </div>
                                     </div>
-                                </div> 
+
+                                    <div class="cv-experience-remove col-sm-2 text-end top-0">
+                                      <span class="btn btn-danger experience-remove" >Xóa</span>
+                                    </div>
+                                  </li>
+
+                                </ul> 
+
+                                <div class="col-sm-12 my-4 cv-experience-add text-end ">
+                                  <span class="btn btn-light experience-add">Thêm công việc khác</span>
+                                </div>
+                              </div>
                             </div>
     
                             <div class="col-12 pt-4 mt-0" id="list-item-4">
     
-                                <div class="cv-experience content px-3 px-sm-4 px-md-5 py-4" >
-                                    <h2>Học vấn</h2>
+                                <div class="cv-education content px-3 px-sm-4 px-md-5 py-4" >
             
-                                    <div class="mb-5 row">
-                                        <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Tên trường cơ sở đào tạo <span class=" red-cl">(*)</span></label>
-                                        <div class="col-sm-7 col-md-7 col-xl-5">
-                                            <input type="text" class="form-control" id="" required>
+                                    <ul class="cv-education-list">
+                                      <h2>Học vấn</h2>
+
+                                      <li>
+                                        <div class="mb-5 row">
+                                          <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Tên trường cơ sở đào tạo <span class=" red-cl">(*)</span></label>
+                                          <div class="col-sm-7 col-md-7 col-xl-5">
+                                              <input type="text" class="form-control" name="school-0" id="" required>
+                                          </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-5 row">
-                                        <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Thời gian học <span class=" red-cl">(*)</span></label>
-                                        <div class="col-sm-7 col-md-7 col-xl-5">
-                                            <input type="text" class="form-control" id="" required>
+                                        <div class="mb-5 row">
+                                            <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Thời gian học <span class=" red-cl">(*)</span></label>
+                                            <div class="col-sm-7 col-md-7 col-xl-5">
+                                                <input type="text" class="form-control" name="year-0" id="" required>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-5 row">
-                                        <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Ngành học <span class=" red-cl">(*)</span></label>
-                                        <div class="col-sm-7 col-md-7 col-xl-5">
-                                            <input type="text" class="form-control" id="" required>
+                                        <div class="mb-5 row">
+                                            <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Ngành học <span class=" red-cl">(*)</span></label>
+                                            <div class="col-sm-7 col-md-7 col-xl-5">
+                                                <input type="text" class="form-control" name="degree-0" id="" required>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-2 row">
-                                        <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Thông tin khác </label>
-                                        <div class="col-sm-7 col-md-7 col-xl-8">
-                                            <textarea name="mota" class="form-control" id="" cols="50" rows="5"></textarea>
+                                        <div class="mb-2 row">
+                                            <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Thông tin khác </label>
+                                            <div class="col-sm-7 col-md-7 col-xl-8">
+                                                <textarea class="form-control" name="info-0" id="" cols="50" rows="5"></textarea>
+                                            </div>
                                         </div>
+
+                                        <div class="cv-education-remove col-sm-2 text-end top-0">
+                                          <span class="btn btn-danger experience-remove" >Xóa</span>
+                                        </div>
+                                      </li>
+
+                                    </ul>
+                                    <div class="col-sm-12 my-4 cv-education-add text-end ">
+                                      <span class="btn btn-light education-add">Thêm học vấn khác</span>
                                     </div>
                                 </div> 
                             </div>

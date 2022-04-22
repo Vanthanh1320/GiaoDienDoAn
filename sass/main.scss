@@ -588,6 +588,40 @@
     
 }
 
+.cv-experience-list{
+    li{
+        position: relative;
+
+        .cv-experience-remove{
+            position: absolute;
+            content: "";
+            top: 48px;
+            right: 0;
+        }
+
+        hr{
+            position: absolute;
+            content: "";
+            top: -40px;
+            width: 100%;
+        }
+
+    }
+}
+
+.cv-education-list{
+    li{
+        position: relative;
+
+        .cv-education-remove{
+            position: absolute;
+            content: "";
+            top: 48px;
+            right: 0;
+        }
+    }
+}
+
 .upload-img{
     background: #fafafa;
     border: 1px solid $boder-color;
