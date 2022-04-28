@@ -25,7 +25,7 @@
         z-index: 99;
         transition: all 0.3s ease-in;
         height: 4rem;
-        background-color:#1e1e1e;
+        background-color:$head-footer-color;
 
         animation-name:inherit;
         animation-duration: 2s;
@@ -193,6 +193,8 @@
 
     &-box{
         border: 1px solid $boder-color;
+        border-radius: 4px;
+
     }
 
     &__select{
@@ -200,10 +202,12 @@
 
         &-btn{
             width: 100%;
-            border: none;
+            border-radius: 4px;
             border-bottom: 1px solid $boder-color;
-            height: 44px;
+            padding: 14px;
             background:$white;
+            text-align: center;
+            font-weight: 600;
         }
     }
 
@@ -219,10 +223,8 @@
     &-right{
         height: 100%;
         display: flex;
-        // justify-content: center;
+        justify-content: center;
         flex-direction: column;
-
-        position: fixed;
 
         img{
             max-width: 588px;
@@ -271,7 +273,6 @@
             position: relative;
             top:0
         }
-
     }
 
     &__form{
@@ -316,7 +317,6 @@
     }
 
 }
-
 
 
 .search-nav{
@@ -450,6 +450,15 @@
 .detail{
 
     &-job{
+
+        &-head{
+            @include flex(space-between,center);
+
+            span{
+                cursor: pointer; 
+                font-size: 20px;   
+            }
+        }
         
         &-title{
             margin: 0;
@@ -694,4 +703,64 @@
     &__social-link{
         padding: 0 10px;
     }
+}
+
+// login
+
+.conatiner-fluid{
+    width: 100%;
+    padding:0 12px 0 12px;
+}
+
+.card-box{
+    border-radius: 16px;
+    border: none;
+    margin: 16px 0;
+
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    &-title{
+        font-size:28px;
+        font-weight: 700;
+        color:$head-footer-color;
+    }
+
+    h3,img:first-child{
+        margin: 25px;
+    }
+
+    img:last-child{
+        width: 100%;
+    }
+}
+
+.sign-in{
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.employer-content{
+
+    &-info{
+        border: 1px solid #D2D2D2;
+        border-top: none;
+    }
+
+   @include flex(space-between,center)
+
+}
+.select-btn{
+   text-align: center;
+   width: 100%;
+   padding: 14px;
+   border-bottom: 1px solid #D2D2D2;
+
+}
+.active-em{
+    border-bottom: none;
+    border-top: 4px solid $btn-color;
+    border-left: 1px solid #D2D2D2;
+    border-right: 1px solid #D2D2D2;
+    border-radius: 4px 4px 0 0;
+    font-weight: 700;
 }

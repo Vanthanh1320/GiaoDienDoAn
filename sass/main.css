@@ -403,6 +403,7 @@ select:focus, input:focus {
 
 .content-box {
   border: 1px solid #D2D2D2;
+  border-radius: 4px;
 }
 
 .content__select {
@@ -419,10 +420,12 @@ select:focus, input:focus {
 
 .content__select-btn {
   width: 100%;
-  border: none;
+  border-radius: 4px;
   border-bottom: 1px solid #D2D2D2;
-  height: 44px;
+  padding: 14px;
   background: #fff;
+  text-align: center;
+  font-weight: 600;
 }
 
 .content-title {
@@ -439,11 +442,13 @@ select:focus, input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
 }
 
 .content-right img {
@@ -711,6 +716,23 @@ select:focus, input:focus {
   color: #0066CC;
 }
 
+.detail-job-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-job-head span {
+  cursor: pointer;
+  font-size: 20px;
+}
+
 .detail-job-title {
   margin: 0;
 }
@@ -932,5 +954,70 @@ select:focus, input:focus {
 
 .footer__social-link {
   padding: 0 10px;
+}
+
+.conatiner-fluid {
+  width: 100%;
+  padding: 0 12px 0 12px;
+}
+
+.card-box {
+  border-radius: 16px;
+  border: none;
+  margin: 16px 0;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-box-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.card-box h3, .card-box img:first-child {
+  margin: 25px;
+}
+
+.card-box img:last-child {
+  width: 100%;
+}
+
+.sign-in {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.employer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.employer-content-info {
+  border: 1px solid #D2D2D2;
+  border-top: none;
+}
+
+.select-btn {
+  text-align: center;
+  width: 100%;
+  padding: 14px;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.active-em {
+  border-bottom: none;
+  border-top: 4px solid #EA1E30;
+  border-left: 1px solid #D2D2D2;
+  border-right: 1px solid #D2D2D2;
+  border-radius: 4px 4px 0 0;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
