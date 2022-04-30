@@ -15,7 +15,8 @@ const btnAddExp=document.querySelector('.experience-add');
 const btnAddEdu=document.querySelector('.education-add');
 const cvExpEl=document.querySelector('.cv-experience-list');
 const cvEduEl=document.querySelector('.cv-education-list');
-
+const btnChange=document.querySelector('.btn-change');
+const btnCloseChange=document.querySelector('.btn-close-change');
 
 // const formEl=document.querySelector('.form');
 
@@ -145,16 +146,18 @@ function newExperience(){
     }
 }
 const removeExpBtn=document.getElementsByClassName('cv-experience-remove');
-
+console.log(removeExpBtn);
 for(var i=0; i<removeExpBtn.length;i++){
     if(removeExpBtn.length < 2 ){
-        removeExpBtn[0].style.opacity="0";
+        removeExpBtn[i].style.opacity="0";
     }
 
     removeExpBtn[i].onclick=function(){
         var liParent=this.parentElement;
         console.log(liParent);
         liParent.style.display="none";
+        removeExpBtn[0].style.opacity="0";
+
     }
 }
 
@@ -231,6 +234,37 @@ for(var i=0; i<removeEduBtn.length;i++){
 }
 
 
+if(btnChange){
+    btnChange.addEventListener('click',(e)=>{
+
+        const inputChangeEl=document.querySelector('.input-change');
+        const pElm=document.querySelector('.change-form>p');
+
+        inputChangeEl.classList.remove('hide');
+        btnCloseChange.classList.remove('hide');
+        btnChange.classList.add('hide');
+        pElm.classList.add('hide');
+    });
+}
+
+if(btnCloseChange){
+    btnCloseChange.addEventListener('click',(e)=>{
+
+        const inputChangeEl=document.querySelector('.input-change');
+        const pElm=document.querySelector('.change-form>p');
+
+        inputChangeEl.classList.add('hide');
+        btnCloseChange.classList.add('hide');
+        btnChange.classList.remove('hide');
+        pElm.classList.remove('hide');
+    });
+}
+
+var loadFile = function (event) {
+    var showImage=document.querySelector('.account-right-img > img');
+    showImage.src=URL.createObjectURL(event.target.files[0]);
+
+}
 
 // if(cvItemBtn){
 //     cvItemBtn.forEach((item,index)=>{

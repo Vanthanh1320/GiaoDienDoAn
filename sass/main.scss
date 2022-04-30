@@ -348,6 +348,52 @@
     }
 }
 
+.change-form{
+    @include flex(flex-start,center);
+
+    .btn-change {
+        text-decoration: underline;
+        color: $timer-color;
+        cursor: pointer;
+    }
+    .btn-close-change{
+        flex-direction: column;
+        align-self: flex-start;
+        font-size: 20px;
+        color: $btn-color;
+        cursor: pointer;
+
+    }
+}
+
+.account{
+
+    &-form{
+        p{
+            font-size: 18px;
+        }
+    }
+
+    &-right{
+        text-align: center;
+        border-left: 1px solid $boder-color;
+
+        &-btn{
+            input{
+                opacity: 0;
+            }
+
+            label{
+                border: 1px solid $boder-color;
+                border-radius: 5px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 .posts{
     margin-bottom: 30px;
 
