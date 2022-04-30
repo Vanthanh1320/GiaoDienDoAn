@@ -82,30 +82,55 @@
           <h2 class="acount-head mb-4">
               Quản lý tài khoản
           </h2>
-          <!-- <hr> -->
-          <form action="">
-            <div class="mb-4 row">
-              <label for="inputEmail" class="col-sm-2 col-form-label">Email:</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control default" id="inputEmail" disabled>
-              </div>
-            </div>  
+          <hr style="color: #D2D2D2;">
 
-            <div class="mb-4 row">
-              <label for="inputPassword" class="col-sm-2 col-form-label">Mật khẩu:</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword" disabled>
+          <form action="" class="account-form">
+            <div class="row">
+              <div class="col-8">
+                <div class="mb-3 row">
+                  <label for="inputEmail" class="col-sm-3 col-form-label fw-bold">Email:</label>
+                  <div class="col-sm-9">
+                    <p class="mt-2 mb-0">vothanh1320@gmail.com</p>
+                  </div>
+                </div>  
+    
+                <div class="mb-3 row">
+                  <label for="inputName" class="col-sm-3 col-form-label fw-bold">Tên người dùng:</label>
+    
+                  <div class="col-sm-9">
+                    <div class="change-form mt-1">
+                      <p class=" mb-0">vothanh</p>
+    
+                      <div class="input-change hide">
+                        <input type="text" class="form-control mb-3" placeholder="Tên người dùng" name="name">
+          
+                      </div>
+                      <span class="btn-change ms-4">Thay đổi</span>
+                      <span class="btn-close-change ms-4 hide"><i class="fa-regular fa-circle-xmark"></i></span>
+    
+                    </div>
+                  </div>
+    
+                </div> 
               </div>
-            </div>  
 
-            <div class="mb-4 row">
-              <label for="inputName" class="col-sm-2 col-form-label">Tên người dùng:</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName">
+              <div class="col-4">
+                <div class="account-right">
+                  <div class="account-right-img">
+                    <img src="../img/account.png" alt="" width="">
+                  </div>
+
+                  <div class="account-right-btn">
+                    <label for="img_account">Chọn ảnh</label>
+                    <input type="file" id="img_account" name="img_account" accept=".jpg, .jpeg, .png" onchange="loadFile(event)" multiple>
+
+                  </div>
+                </div>
+
               </div>
-            </div>  
+            </div>
 
-            <div class="my-4 text-center">
+            <div class="my-2 text-center">
               <input class="btn btn-submit px-4 " type="submit" value="Lưu">
             </div>
           </form>
@@ -113,29 +138,7 @@
       </div>
     </div>  
 
-    <!-- <div class="footer">
-      <div class="footer__wrap container-fluid py-4">
-        <p class="footer-text">Copyright &copy; IT DaNang</p>
-        <div class="footer__social">
-          <a
-            href="https://www.facebook.com/profile.php?id=100008386385400"
-            class="footer__social-link"
-            target="_blank"
-          >
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://github.com/Vanthanh1320" class="footer__social-link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a
-            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
-            class="footer__social-link"
-          >
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </div> -->
+  
   </body>
 
   <script src="../js/app.js"></script>
