@@ -96,7 +96,6 @@ function newExperience(){
     const liElement=cvExpEl.querySelectorAll('li');
 
     var li=document.createElement('li');
-    li.className="pt-5";
 
     for(var i=0;i<liElement.length;i++){
         li.innerHTML=`
@@ -135,10 +134,6 @@ function newExperience(){
 
     for(var i=0; i<removeExpBtn.length;i++){
 
-        if(removeExpBtn.length > 1){
-            removeExpBtn[0].style.opacity="1";
-        }
-    
         removeExpBtn[i].onclick=function(){
             var liParent=this.parentElement;
             liParent.style.display="none";
@@ -146,18 +141,12 @@ function newExperience(){
     }
 }
 const removeExpBtn=document.getElementsByClassName('cv-experience-remove');
-console.log(removeExpBtn);
-for(var i=0; i<removeExpBtn.length;i++){
-    if(removeExpBtn.length < 2 ){
-        removeExpBtn[i].style.opacity="0";
-    }
 
+for(var i=0; i<removeExpBtn.length;i++){
     removeExpBtn[i].onclick=function(){
         var liParent=this.parentElement;
         console.log(liParent);
         liParent.style.display="none";
-        removeExpBtn[0].style.opacity="0";
-
     }
 }
 
@@ -209,10 +198,6 @@ function newEducation(){
 
     for(var i=0; i<removeEduBtn.length;i++){
 
-        if(removeEduBtn.length > 1){
-            removeEduBtn[0].style.opacity="1";
-        }
-    
         removeEduBtn[i].onclick=function(){
             var liParent=this.parentElement;
             liParent.style.display="none";
@@ -222,10 +207,6 @@ function newEducation(){
 const removeEduBtn=document.getElementsByClassName('cv-education-remove');
 
 for(var i=0; i<removeEduBtn.length;i++){
-    if(removeEduBtn.length < 2 ){
-        removeEduBtn[0].style.opacity="0";
-    }
-
     removeEduBtn[i].onclick=function(){
         var liParent=this.parentElement;
         console.log(liParent);
@@ -283,3 +264,14 @@ var loadFile = function (event) {
 // }
 
 
+var loadFile = function (event) {
+    var showImage=document.querySelector('.account-right-img > img');
+    var show=document.querySelector('.img > img');
+
+    if (show){
+        show.src=URL.createObjectURL(event.target.files[0]);
+    }else {
+        showImage.src=URL.createObjectURL(event.target.files[0]);
+    }
+
+}

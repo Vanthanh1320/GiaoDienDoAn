@@ -205,8 +205,8 @@
                                         <div class="col-sm-7 col-md-7 col-xl-5">
                                             <div class="upload-img px-3 py-3">
                                                 <div class="upload-img-main">
-                                                    <div class="upload">
-                                                        <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple="">
+                                                    <div class="upload"> 
+                                                        <input type="file" id="image_uploads" onchange="loadFile(event)" name="image_uploads" accept=".jpg, .jpeg, .png" multiple="">
                                                         <label for="image_uploads">                        
                                                             <p class="m-0">Thêm ảnh</p>
                                                             <i class="fa-solid fa-circle-plus"></i>
@@ -214,8 +214,19 @@
                                                     </div>
                                                     
                                                     <div class="img">
-    
+                                                      <img src="../img/anhthe.jpg" alt="image" >
+                                                    
+                                                      <div class="upload-img-hover">
+                                                        <input type="file" id="image_uploads" onchange="loadFile(event)" name="image_uploads" accept=".jpg, .jpeg, .png" multiple="">
+  
+                                                        <label for="image_uploads">                        
+                                                          <i class="fa-solid fa-upload"></i>
+                                                        </label>
+  
+                                                      </div>
                                                     </div>
+
+            
                                                 </div>
                                             </div>
                                         </div>
@@ -294,7 +305,8 @@
                                 <ul class="cv-experience-list " >
                                   <h2>Kinh nghiệm làm việc</h2>
 
-                                  <li>                      
+                                  <li>  
+                                    <hr class="my-5">                    
                                     <div class="mb-5 row">
                                       <label for="" class="col-sm-3 col-md-3 col-xl-3 col-form-label">Tên công ty <span class=" red-cl">(*)</span></label>
                                       <div class="col-sm-7 col-md-7 col-xl-5">
@@ -321,9 +333,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="cv-experience-remove col-sm-2 text-end top-0">
-                                      <span class="btn btn-danger experience-remove" >Xóa</span>
-                                    </div>
                                   </li>
 
                                 </ul> 
@@ -365,10 +374,6 @@
                                             <div class="col-sm-7 col-md-7 col-xl-8">
                                                 <textarea class="form-control" name="info-0" id="" cols="50" rows="5"></textarea>
                                             </div>
-                                        </div>
-
-                                        <div class="cv-education-remove col-sm-2 text-end top-0">
-                                          <span class="btn btn-danger experience-remove" >Xóa</span>
                                         </div>
                                       </li>
 

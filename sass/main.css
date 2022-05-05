@@ -650,6 +650,14 @@ select:focus, input:focus {
   cursor: pointer;
 }
 
+.account-right img {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .posts {
   margin-bottom: 30px;
 }
@@ -914,15 +922,15 @@ select:focus, input:focus {
 .cv-experience-list li .cv-experience-remove {
   position: absolute;
   content: "";
-  top: 48px;
   right: 0;
 }
 
 .cv-experience-list li hr {
-  position: absolute;
-  content: "";
-  top: -40px;
   width: 100%;
+}
+
+.cv-experience-list > :nth-child(2) > hr {
+  display: none;
 }
 
 .cv-education-list li {
@@ -953,6 +961,16 @@ select:focus, input:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.upload-img-main > .img {
+  position: absolute;
+  top: 0;
+}
+
+.upload-img-main .img:hover > .upload-img-hover {
+  opacity: 1 !important;
 }
 
 .upload-img-main img {
@@ -976,6 +994,19 @@ select:focus, input:focus {
   position: absolute;
   content: "";
   bottom: 0;
+}
+
+.upload-img-hover {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 20px;
+  opacity: 0;
 }
 
 .employer-main {
